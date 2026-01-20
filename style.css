@@ -80,7 +80,94 @@ body{
     font-size: 500;
     font-weight: 18px;
 }
+/* banner styles  */
+.banner {
+    background:  url(./assets/hero-bg.png);
+    
+    background-position: center;
+ 
+    padding: 200px 0;
+    position: relative;
+   
+}
+.takewave {
+    position: relative;
+    
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
 
+/* podcast circle  */
+.podcast-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+    
+}
+.mike {
+    position: absolute;
+}
+
+.circle-new{
+    position: relative;
+
+}
+.badge-new {
+    
+    position: absolute;
+    left: 230px;
+
+}
+
+
+/* Banner text  */
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    
+}
+.tagline {
+    font-size: 20px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+/* Banner buttons  */
+.banner-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.btn-spotify {
+    background:  linear-gradient(45deg ,#F7E935 , #FB09b4 , #9100F8) ;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 18px ;
+    font-weight: 600 ;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.btn-subscribe {
+    border: 1px solid #00FF88;
+    color: #00FF88;
+    background-color: transparent;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 18px ;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0 10px 20px rgba(102,126,234, 00.3);
+}
 
 
 
@@ -118,7 +205,89 @@ body{
         display: block;
     }
 
+    /* responsive banner */
 
+    .banner-content {
+        padding: 40px 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .banner {
+        margin-bottom: 0 auto;
+        
+    
+    }
+    
+    .podcast-circle {
+        position: relative;
+        width: 180px; 
+        height: 180px;
+        margin: 0 auto 30px auto; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .circle-new img:first-child {
+        width: 100%;
+        height: auto;
+    }
+    
+    .mike {
+        position: absolute;
+        width: 50px; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    .badge-new {
+        position: absolute;
+        width: 70px; 
+        top: 10px;
+        right: 20px;
+        z-index: 3;
+    }
+    
+    .banner h1 {
+        font-size: 32px; 
+        margin-bottom: 10px;
+        line-height: 1.2;
+    }
+    
+    .tagline {
+        font-size: 14px;
+        margin-bottom: 30px;
+        line-height: 1.5;
+        padding: 0 10px;
+    }
+    
+    .banner-buttons {
+        flex-direction: column; 
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .btn-spotify, .btn-subscribe {
+        width: 100%;
+        max-width: 300px; 
+        justify-content: center; 
+        font-size: 16px;
+        padding: 12px;
+    }
+    
+    .btn-subscribe {
+        border: 1px solid #00FF88; 
+        background-color: transparent;
+        color: #ffffff; 
+    }
+    
+    
 
 
 
